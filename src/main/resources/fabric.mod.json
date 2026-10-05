@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "carpetbots",
+	"version": "${version}",
+	"name": "Bots Carpet",
+	"description": "Comportements pour les bots Carpet du serveur : /omenbot fait boire une fiole sinistre à un bot dès qu'aucun raid n'est actif autour de lui.",
+	"authors": [
+		"nistroy"
+	],
+	"contact": {
+		"sources": "https://github.com/Nistroy/minecraft-carpet-bots",
+		"issues": "https://github.com/Nistroy/minecraft-carpet-bots/issues"
+	},
+	"license": "GPL-3.0-only",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.nistroy.carpetbots.CarpetBots"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"carpet": "1.4.147"
+	}
+}

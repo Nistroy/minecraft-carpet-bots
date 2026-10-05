@@ -1,0 +1,16 @@
+{
+	"schemaVersion": 1,
+	"id": "carpetbots-test",
+	"version": "1.0.0",
+	"name": "Bots Carpet — tests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-gametest": [
+			"io.github.nistroy.carpetbots.test.OmenDrinkerGameTest",
+			"io.github.nistroy.carpetbots.test.OmenBotsGameTest"
+		]
+	},
+	"depends": {
+		"carpetbots": "*"
+	}
+}
