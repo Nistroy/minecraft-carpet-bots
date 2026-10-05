@@ -7,7 +7,8 @@
 	"entrypoints": {
 		"fabric-gametest": [
 			"io.github.nistroy.carpetbots.test.OmenDrinkerGameTest",
-			"io.github.nistroy.carpetbots.test.OmenBotsGameTest"
+			"io.github.nistroy.carpetbots.test.OmenBotsGameTest",
+			"io.github.nistroy.carpetbots.test.OmenBotCommandGameTest"
 		]
 	},
 	"depends": {

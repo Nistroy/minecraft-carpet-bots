@@ -4,6 +4,8 @@ Mod Fabric 1.21.1 pour le serveur de nistroy : comportements en plus pour les bo
 
 ## `/omenbot <bot> on|off`
 
+`/omenbot` seul affiche l'aide et la liste des bots activés.
+
 Le bot boit une fiole sinistre (ominous bottle) dès que :
 
 - aucun raid n'est actif à moins de 96 blocs de lui ;
