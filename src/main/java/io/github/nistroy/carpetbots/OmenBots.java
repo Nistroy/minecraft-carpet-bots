@@ -1,5 +1,6 @@
 package io.github.nistroy.carpetbots;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -27,6 +28,10 @@ public final class OmenBots {
 
 	public static boolean isEnabled(UUID bot) {
 		return ENABLED.contains(bot);
+	}
+
+	public static Set<UUID> enabled() {
+		return Collections.unmodifiableSet(ENABLED);
 	}
 
 	public static void tick(MinecraftServer server) {

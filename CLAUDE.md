@@ -13,7 +13,8 @@ monte). Mod séparé du correctif piston, activation par commande par bot (choix
   `ServerLevel.getRaidAt` null (raid actif ≤ 96 blocs du centre, vanilla), fiole en main gauche ou main gauche vide
   (pile déplacée depuis `inventory.items`). Boit via `gameMode.useItem` → fin vanilla (32 ticks).
 - `OmenBots` — `Set<UUID>` en mémoire, tick toutes les 20 ticks (`CarpetBots`), bot hors ligne → oublié.
-- `OmenBotCommand` — `/omenbot <bot> on|off`, niveau 2, refus si pas `carpet.patches.EntityPlayerMPFake`.
+- `OmenBotCommand` — `/omenbot` = aide + bots activés en ligne ; `/omenbot <bot> on|off`, niveau 2, refus si pas
+  `carpet.patches.EntityPlayerMPFake`.
 
 ## Faits vérifiés (test-server 2026-10-05)
 - Carpet `use continuous` enchaîne toute la pile de fioles ; `use once` annule la gorgée → raison de ce mod.
@@ -25,6 +26,7 @@ monte). Mod séparé du correctif piston, activation par commande par bot (choix
 - Résultat dans `build/run/gameTest/logs/latest.log` (`All N required tests passed`) ; sortie console filtrée par rtk.
 - Joueur fictif `makeMockServerPlayerInLevel` (créatif, pas tické par le serveur → `doTick()` à la main pour finir de boire).
 - Raid de test : `createOrExtendRaid` + `stop()` en `finally`, batch `raid` à part (rayon 96 blocs).
+- Commande testée via `performPrefixedCommand` + `CommandSource` qui capture les messages (`OmenBotCommandGameTest`).
 - Commande sur vrai bot Carpet : pas testable en gametest (profil Mojang) → test manuel `test-server/`.
 
 ## Release
